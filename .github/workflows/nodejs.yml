@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: Build The docker contianer image
+      run: docker ps
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
